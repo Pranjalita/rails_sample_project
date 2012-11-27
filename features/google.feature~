@@ -1,0 +1,6 @@
+Feature: Checking the links
+
+Scenario: 
+	Given that i am on homepage
+	When i fill "fk-top-search-box" with "Agile Samurai" 
+	Then the page should contain "Agile Samura"

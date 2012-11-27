@@ -1,0 +1,15 @@
+
+Given /^I am on GoogleHomePage$/ do
+  visit "http://www.flipkart.com"
+end
+
+When /^I type in "(.*?)" with "(.*?)"$/ do |searchbox_id, book|
+ fill_in(searchbox_id:with=>book) 
+end
+
+
+
+Then /^i get "(.*?)"$/ do |arg1|
+ 
+end
+

@@ -1,0 +1,22 @@
+Given /^I visit the shopping website$/ do
+    visit "http://www.myntra.com"
+end
+
+When /^i search for a "(.*?)"$/ do |product|
+ 
+ @product="TITAN"
+  find(:xpath,"//div[@id='lb-login']/div[@class='mod']/div[@class='close']").click  
+  fill_in("search_query",:with => @product)
+ 
+end
+
+
+When /^select the "(.*?)"$/ do |arg1|
+   find(:css,"button.mk-site-search-btn mk-f-left").click
+  
+end
+
+Then /^I shoould be redirected to the details of selected "(.*?)"$/ do |arg1|
+assert_equal "Titan Watches India | Buy Original Titan Watches Online in India",page.find(:css,'title').text
+end
+

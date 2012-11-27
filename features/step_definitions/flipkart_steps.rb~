@@ -1,0 +1,16 @@
+Given /^I visit the shopping website$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^i search for a "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^select the "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^I shoould be redirected to the details of selected "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+

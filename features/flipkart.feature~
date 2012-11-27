@@ -1,0 +1,9 @@
+Feature: Online Shopping
+
+Scenario: Shopping 
+	 
+
+        Given I visit the shopping website
+	When i search for a "product"
+	And select the "product"
+	Then I shoould be redirected to the details of selected "product" 
